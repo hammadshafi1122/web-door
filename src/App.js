@@ -29,7 +29,7 @@ function App() {
      <div>
 
      <OurServices/>
-<div className='p-[2rem]  sm:mx-[-1rem] sm:grid sm:grid-cols-2 sm:gap-8 lg:grid lg:grid-cols-3 lg:grid-rows-2  lg:gap-y-2 lg:gap-x-0  lg:mx-[12rem] '>
+<div className='p-[2rem] grid grid-cols-1 gap-3 sm:mx-[-1rem] sm:grid sm:grid-cols-2 sm:gap-8 lg:grid lg:grid-cols-3 lg:grid-rows-2  lg:gap-y-2 lg:gap-x-0  lg:mx-[12rem] '>
 
      <Services icon={()=><BsSearch className='text-blue-600' size="3rem"/>} name="Seach Doctor"/>
      <Services icon={()=><GiMedicinePills className='text-blue-600' size="3rem"/>} name="Online Pharmacy"/>

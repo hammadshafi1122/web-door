@@ -8,7 +8,7 @@ function Navbar() {
 
         </div>
         <div className="">
-          <ul className='flex  space-x-2 text-xs py-[0rem] sm:space-x-6 sm:text-base lg:space-x-14 lg:text-lg'>
+          <ul className='flex  space-x-0 my-[0.5rem] text-xs py-[0rem] sm:space-x-6 sm:text-base lg:space-x-14 lg:text-lg'>
             <li className='cursor-pointer  px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] hover:bg-slate-200 hover:px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] '>Home</li>
             <li className='cursor-pointer  px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] hover:bg-slate-200 hover:px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] '>Doctor</li>
             <li className='cursor-pointer px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] hover:bg-slate-200 hover:px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] '>Apps</li>
