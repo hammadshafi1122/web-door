@@ -22,12 +22,14 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
+    <div className='max-w-[100rem] font-serif'>
+
      <Navbar />
      <Navbelow />
      <div>
 
      <OurServices/>
-<div className='p-[2rem] space-y-3 sm:mx-[-1rem] sm:grid sm:grid-cols-2 sm:gap-8 lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-20 lg:mx-[5rem] '>
+<div className='p-[2rem]  sm:mx-[-1rem] sm:grid sm:grid-cols-2 sm:gap-8 lg:grid lg:grid-cols-3 lg:grid-rows-2  lg:gap-y-2 lg:gap-x-0  lg:mx-[12rem] '>
 
      <Services icon={()=><BsSearch className='text-blue-600' size="3rem"/>} name="Seach Doctor"/>
      <Services icon={()=><GiMedicinePills className='text-blue-600' size="3rem"/>} name="Online Pharmacy"/>
@@ -40,11 +42,11 @@ function App() {
      </div>
      <Sect1/>
      <Sect2/>
-     <div className=' py-[2rem]'>
+     <div className=' py-[2rem] lg:mx-[5rem]'>
      <Slider/>
      </div>
      <Testtop/>
-     <div className='sm:mx-[8.8rem] md:flex md:mx-[0.1rem] md:h-[23rem] lg:mx-[7rem] my-[2rem] '>
+     <div className='sm:mx-[8.8rem] md:flex md:mx-[0.1rem] md:h-[23rem] lg:mx-[7rem] my-[2rem] lg:h-[26rem] '>
      
 
      <Testimonals Img={img2} name="Disease detection, check up in the laboratory"/>
@@ -56,6 +58,7 @@ function App() {
      <div className=' '>
 
      <Footer/>
+     </div>
      </div>
 
     </>

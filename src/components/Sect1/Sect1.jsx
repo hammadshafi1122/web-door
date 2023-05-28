@@ -14,7 +14,7 @@ function Sect1() {
           distinctio  fugit, ea neque a
           i ratione eaque placeat.</div>
         <div>
-          <button className='border-2 text-white bg-blue-500 rounded-full p-[0.5rem] mx-[6rem] sm:mx-[14.5rem] md:mx-[2rem]'>Consult today</button>
+          <button className='border-2 text-white bg-blue-500 rounded-full p-[0.5rem] mx-[6rem] sm:mx-[14.5rem] md:mx-[2rem] hover:bg-blue-500 hover:text-black'>Consult today</button>
         </div>
         </div>
         
