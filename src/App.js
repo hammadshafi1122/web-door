@@ -22,14 +22,18 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
-    <div className='max-w-[100rem] font-serif'>
+    <div className='lg:w-screen  lg:justify-center max-w-[84.5rem]'>
+
+<div className=' space-y-16'>
 
      <Navbar />
      <Navbelow />
-     <div>
+     </div>
+
+     <div className='max-w-[84.5rem]'>
 
      <OurServices/>
-<div className='p-[2rem] grid grid-cols-1 gap-3 sm:mx-[-1rem] sm:grid sm:grid-cols-2 sm:gap-8 lg:grid lg:grid-cols-3 lg:grid-rows-2  lg:gap-y-2 lg:gap-x-0  lg:mx-[12rem] '>
+<div className='p-[2rem] grid grid-cols-1 gap-3tb sm:mx-[-1rem] sm:grid sm:grid-cols-2 sm:gap-8 lg:grid lg:grid-cols-3 lg:grid-rows-2  lg:gap-y-3 lg:gap-x-5  lg:mx-[12rem] '>
 
      <Services icon={()=><BsSearch className='text-blue-600' size="3rem"/>} name="Seach Doctor"/>
      <Services icon={()=><GiMedicinePills className='text-blue-600' size="3rem"/>} name="Online Pharmacy"/>
@@ -46,11 +50,10 @@ function App() {
      <Slider/>
      </div>
      <Testtop/>
-     <div className='sm:mx-[8.8rem] md:flex md:mx-[0.1rem] md:h-[23rem] lg:mx-[7rem] my-[2rem] lg:h-[26rem] '>
+     <div className='sm:mx-[8.8rem] md:flex md:mx-[0.1rem] md:h-[23rem] lg:mx-[10rem] my-[2rem] '>
      
 
-     <Testimonals Img={img2} name="Disease detection, check up in the laboratory"/>
-
+     <Testimonals Img={img1} name="Disease detection, check up in the laboratory"/>
     <Testimonals Img={img2} name="Herbal medicines that are safe for consumption"/>
     <Testimonals Img={img3} name="Natural care for healthy facial skin"/>
 

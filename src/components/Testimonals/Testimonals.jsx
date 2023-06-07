@@ -2,7 +2,7 @@ import React from 'react'
 function Testimonals(props)
 {
   return (
-    <div className='bg-slate-200 rounded-md space-y-3  w-auto  mx-[1.2rem] sm:w-[18rem] md:mx-[2rem]  lg:h-[24.5rem]'>
+    <div className='bg-slate-200 rounded-md space-y-3 mx-[1.2rem] sm:w-[18rem] md:mx-[2rem]  lg:h-[24.5rem]'>
         <div>
         </div>
         <div className='font-bold '><img className='rounded-md md:my-[-0.6rem]' src={props.Img} alt="" /></div>

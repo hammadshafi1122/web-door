@@ -5,7 +5,7 @@ function Slideinner() {
   return (
     <div className='space-y-10 lg:w-full lg:space-y-0'>
         <div className='space-y-2 '>
-          <div className='px-[-1rem]'><span className='font-bold text-[0.9rem] sm:mx-[5rem] sm:text-2xl md:mx-[9rem] lg:mx-[10rem]'>What our customers are saying </span></div>
+          <div className='px-[-1rem]'><span className='font-bold text-[0.9rem] sm:mx-[5rem] sm:text-2xl md:mx-[9rem] lg:mx-[13rem]'>What our customers are saying </span></div>
           <div><hr className='w-[16rem] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-white' /></div>
         </div>
 

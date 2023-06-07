@@ -1,25 +1,34 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 function Navbar() {
+  const [open,setOpen] = useState(false);
+   
   return (
-    <div className=' text-black justify-around flex h-[4rem] py-[0.8rem] space-x-2'>
-        <div className=" text-blue-600 font-bold py-[0.4rem] sm:text-2xl sm:py-[0.1rem]">  
-              <p>Trafalgon</p>
-
-        </div>
-        <div className="">
-          <ul className='flex  space-x-0 my-[0.5rem] text-xs py-[0rem] sm:space-x-6 sm:text-base lg:space-x-14 lg:text-lg'>
-            <li className='cursor-pointer  px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] hover:bg-slate-200 hover:px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] '>Home</li>
-            <li className='cursor-pointer  px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] hover:bg-slate-200 hover:px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] '>Doctor</li>
-            <li className='cursor-pointer px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] hover:bg-slate-200 hover:px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] '>Apps</li>
-            <li className='cursor-pointer  px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] hover:bg-slate-200 hover:px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] '>Testimonals</li>
-            <li className='cursor-pointer  px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] hover:bg-slate-200 hover:px-[0.4rem] hover:h-[3rem] hover:my-[-1rem] hover:py-[1rem] '>About</li>
-          </ul>
-
-        </div>
-
-      
+    <div className=' shadow-md  w-full fixed top-0 left-0'>
+      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+      <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+      text-gray-800'>
+        <span className='text-3xl text-indigo-600 mr-1 pt-2 lg:mx-[5.7rem]'>
+        <ion-icon name="logo-ionic"></ion-icon>
+        </span>
+        Traflagon
       </div>
+      
+      <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+      <GiHamburgerMenu  name={open ? 'close':'menu'} size={20} />
+      </div>
+
+      <ul className={` md:flex md:items-center md:pb-0 pb-8 absolute md:static bg-gray-900 text-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-8 lg:pt-3 transition-all duration-500 ease-in ${open ? 'top-[4.2rem] ':'top-[-490px]'} lg:mx-[11rem] lg:space-x-12 lg:bg-white lg:text-black`}>
+      <li className='cursor-pointer  lg:hover:bg-slate-200 '>Home</li>
+            <li className='cursor-pointer   '>Doctor</li>
+            <li className='cursor-pointer '>Apps</li>
+            <li className='cursor-pointer  '>Testimonals</li>
+            <li className='cursor-pointer   '>About</li>
+      
+      </ul>
+      </div>
+    </div>
   )
 }
 

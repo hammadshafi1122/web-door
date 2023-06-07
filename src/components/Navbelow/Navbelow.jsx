@@ -2,7 +2,7 @@ import React from 'react'
 import Plusimg from '../../images/Plusimg.png'
 function Navbelow() {
   return (
-      <div className='space-y-3 md:flex lg:mx-[5rem] lg:my-[2rem] lg:justify-around'>
+      <div className=' space-y-3 md:flex my-[4rem] lg:mx-[5rem] lg:my-[2rem] lg:justify-around'>
         <div className='p-[1rem] space-y-4 sm:py-[2rem] sm:space-y-6 sm:my-[1rem] md:mx-[1.5rem] md:w-[20rem] md:h-[30rem] '>
         <div><p className='font-bold text-xl mx-[1rem] sm:text-3xl sm:mx-[6rem] md:mx-[0.1rem] md:my-[1rem] '>Virtual Healthcare for you</p></div>
         <div className='sm:mx-[1.5rem] md:mx-[0.1rem]'> consectetur adipisicing 

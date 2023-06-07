@@ -2,7 +2,7 @@ import React from 'react'
 function Services(props) {
     const Icon = props.icon
   return (
-    <div className='bg-slate-200 p-[2rem] rounded-xl space-y-3  sm:w-[18rem] md:mx-[2rem]'>
+    <div className='bg-slate-200 p-[2rem] rounded-xl space-y-3  sm:w-[18rem] md:mx-[2rem] lg:w-[18.4rem] lg:mx-[0rem]'>
         <div>
             <Icon/>
         </div>
